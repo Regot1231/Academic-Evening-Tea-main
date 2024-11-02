@@ -52,14 +52,9 @@ const weChatLogin = async () => {
     console.log(res)
     code = res.code
     if (res) {
-      uni.showToast({
-        title: '获取登录code成功',
-        icon: 'success',
-        duration: 1000,
-      })
       // 调用微信登录API
       wx.request({
-        url: `${baseUrl}/wxLogin`, //改基地址的时候记得改这里
+        url: `${baseUrl}/wxLogin`, 
         method: 'POST',
         data: {
           code: code,

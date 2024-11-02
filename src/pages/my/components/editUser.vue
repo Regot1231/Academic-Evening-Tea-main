@@ -193,7 +193,7 @@ const unbind = () => {
   }
   uni.showModal({
     title: '提示',
-    content: '确退出绑定吗？',
+    content: '确定退出绑定吗？',
     success: (res) => {
       if (res.confirm) {
         packageUnbind()

@@ -1,6 +1,6 @@
 import { useMemberStore } from '@/stores'
 
-const baseUrl = 'https://192.168.43.51:3166'
+const baseUrl = 'https://www.academictime.cn:3188'
 
 const httpInterceptor = {
   // 拦截前触发
